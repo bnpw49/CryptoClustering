@@ -1,18 +1,18 @@
 # CryptoClustering
 ![alt text](https://m.foolcdn.com/media/dubs/images/original_imageshttpsg.foolcdn.comeditorialimag.width-880_1RsBqNB.jpg)
 ## Instructions
-    1. Rename the Crypto_Clustering_starter_code.ipynb file as Crypto_Clustering.ipynb.
+1. Rename the Crypto_Clustering_starter_code.ipynb file as Crypto_Clustering.ipynb.
 
-    2. Load the crypto_market_data.csv into a DataFrame.
+2. Load the crypto_market_data.csv into a DataFrame.
 
-    3. Get the summary statistics and plot the data to see what the data looks like before proceeding.
+3. Get the summary statistics and plot the data to see what the data looks like before proceeding.
 
 ## Prepare the Data
 * Use the StandardScaler() module from scikit-learn to normalize the data from the CSV file.
 
 * Create a DataFrame with the scaled data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
-       * The first five rows of the scaled DataFrame should appear as follows:
+    * The first five rows of the scaled DataFrame should appear as follows:
 
 ![alt text](https://static.bc-edx.com/data/dl-1-2/m19/lms/img/scaled_DataFrame.png)
 
@@ -72,7 +72,7 @@ Use the following steps to cluster the cryptocurrencies for the best value for k
 * Create a copy of the DataFrame with the PCA data and add a new column to store the predicted clusters.
 * Create a scatter plot using hvPlot as follows:
     * Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
-       * Color the graph points with the labels found using K-means.
+    * Color the graph points with the labels found using K-means.
     * Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
 * Answer the following question:
     * What is the impact of using fewer features to cluster the data using K-Means?
